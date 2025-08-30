@@ -1,0 +1,233 @@
+.home{
+    position: relative;
+    z-index: 1;
+
+    background-image: url("../img/home/wallpaper.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 985px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width:576px){
+    .home{
+        min-height: 600px;
+    }
+}
+
+.home__inner{
+    padding-bottom: 82px;
+}
+
+@media screen and (max-width: 576px){
+    .home__inner{
+        padding-bottom: 50px;
+    }
+}
+
+
+.home__inner__text{
+    font-family: 'NEXT ART', sans-serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    line-height: 150%;
+    letter-spacing: 0.012em;
+
+    color: var(--white-color);
+
+    padding-bottom: 41px;
+}
+
+@media screen and (max-width: 576px){
+    .home__inner__text{
+        padding-bottom: 32px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .home__inner__text{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .home__inner__text{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home__inner__text{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .home__inner__text{
+        font-size: 1.1rem;
+    }
+}
+
+.home__inner__table{
+    padding: 40px 43px;
+    background-color: var(--white-back-color);
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(6px);
+}
+
+@media screen and (max-width: 576px){
+    .home__inner__table{
+        display: inline-block;
+        padding: unset;
+    }
+}
+
+.home__inner__table__list{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width:1200px){
+    .home__inner__table__list{
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .home__inner__table__list li:nth-child(4){
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width:768px){
+    .home__inner__table__list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .home__inner__table__item:nth-child(1),
+    .home__inner__table__item:nth-child(2),
+    .home__inner__table__item:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px){
+    .home__inner__table__list{
+        display: flex;
+        justify-content: unset;
+
+        grid-template-columns: unset;
+        gap: unset;
+    }
+
+    .home__inner__table__list li:nth-child(4){
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
+
+.table__dropdown{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    width: 270px;
+    height: 52px;
+
+    padding: 14px 16px;
+
+    color: var(--white-color);
+    background-color: unset;
+
+    border: 1px solid var(--white-color);
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width: 1200px){
+    .table__dropdown{
+        width: 216px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .table__dropdown{
+        width: 189px;
+
+        font-size: 0.875rem;
+
+        white-space: nowrap;
+    }
+}
+
+.home__inner__table__item{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 8px;
+}
+
+@media screen and (max-width:1200px){
+    .home__inner__table__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:576px){
+    .home__inner__table__item{
+        justify-content: unset;
+        align-items: unset;
+    }
+}
+
+.table__text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+
+    padding: 0 8px;
+
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 992px){
+    .table__text{
+        font-size: 0.675rem;
+        padding: 0 4px;
+    }
+}
+
+.home__inner__table__button{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+    padding: 16px 36px;
+
+    color: var(--gray-color);
+    background-color: var(--white-color);
+
+    border: 1px solid var(--white-color);
+    border-radius: 8px;
+
+}
