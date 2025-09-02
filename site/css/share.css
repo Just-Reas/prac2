@@ -1,16 +1,25 @@
 .share{
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    padding-bottom: 150px;
 }
 
 .share__inner{
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 @media screen and (max-width:768px){
     .share__inner{
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .share__inner{
+        padding-top: 50px;
+        padding-bottom: 350px;
     }
 }
 
@@ -149,20 +158,33 @@
 }
 
 .share__button:hover{
-    border: 1px solid var(--gray-color);
 
     background-color: unset;
     color: var(--gray-color);
 }
 
 .share__actual{
+    width: 100%;
+    max-width: 1180px;
     display: flex;
-
-    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    max-width: 1180px;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+    left: 50%;
 
     box-shadow: 0 0 15px var(--black-color);
     border-radius: 6px;
 
+    background-color: var(--white-color);
+
+}
+
+@media screen and (max-width:768px){
+    .share__actual{
+        transform: translate(-50%, 0%);
+    }
 }
 
 .share__actual__content_conteiner{
@@ -191,6 +213,8 @@
     .share__actual__content_conteiner{
         justify-content: unset;
         gap: 24px;
+
+        padding: 20px;
     }
 }
 
@@ -380,7 +404,6 @@
 
 .email__button{
     display: flex;
-
     font-family: 'Nunito Sans',sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -415,7 +438,6 @@
 }
 
 .email__button:hover{
-    border: 1px solid var(--gray-color);
 
     background-color: unset;
     color: var(--gray-color);
@@ -455,15 +477,4 @@
 
 .actual__content__lower__text span{
     text-decoration: underline;
-}
-
-.footer__wrapper{
-    margin: 0;
-    padding: 0;
-    height: 110px;
-    width: 100%;
-    background-color: var(--gray-color);
-    border: none;
-    margin-bottom: -1px;
-    z-index: 1;
 }

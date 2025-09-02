@@ -176,7 +176,6 @@
 }
 
 .about__inner__button:hover{
-    border: 1px solid var(--gray-color);
 
     background-color: unset;
     color: var(--gray-color);
